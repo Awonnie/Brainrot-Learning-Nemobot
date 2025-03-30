@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🧠 Brainrot Learning Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #f8f8ff;
+        }
+        h1 {
+            color: #6A0DAD;
+        }
+        form {
+            margin-top: 2rem;
+        }
+        textarea {
+            width: 100%;
+            height: 400px;
+            margin-top: 1rem;
+            white-space: pre-wrap;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            padding: 0.7rem 1.2rem;
+            background-color: #6A0DAD;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5c0cb3;
+        }
+        audio {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 Brainrot Learning Chatbot</h1>
+    <p>Upload your lecture slides (PDF or PPTX), and get a conversation between a blur sotong & a chao mugger!</p>
+
+    <form action="/brainrot_chatbot" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdf_file" accept=".pdf,.pptx" required>
+        <button type="submit">Generate Conversation</button>
+    </form>
+
+    {% if conversation %}
+        <h2>🗣️ Generated Conversation</h2>
+        <textarea readonly>
+{% for line in conversation %}
+{{ line.speaker }}: {{ line.text }}
+{% endfor %}
+        </textarea>
+
+        <h3>🎧 Listen to the Podcast</h3>
+        <audio id="podcast-audio" controls autoplay>
+            <source id="podcast-source" src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            window.addEventListener('load', async () => {
+                try {
+                    const response = await fetch('/generate_full_audio');
+                    const data = await response.json();
+                    if (data.status === "success") {
+                        const audio = document.getElementById('podcast-audio');
+                        const source = document.getElementById('podcast-source');
+                        source.src = `/${data.audio_file}`;
+                        audio.load();
+                        audio.play();
+                    }
+                } catch (err) {
+                    console.error("Audio generation failed:", err);
+                }
+            });
+        </script>
+    {% endif %}
+</body>
+</html>
