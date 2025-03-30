@@ -6,13 +6,13 @@ from fastapi.responses import FileResponse
 from langchain.docstore.document import Document
 from langchain_community.document_loaders.pdf import PyPDFLoader
 from langchain.prompts import PromptTemplate
-from langchain_google_vertexai import VertexAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from google.cloud import aiplatform
 from pptx import Presentation
 from elevenlabs.client import ElevenLabs
 from pydub import AudioSegment
+from dotenv import load_dotenv
+import openai
 
 import os
 import json
@@ -22,14 +22,11 @@ import uuid
 import uvicorn
 import re
 
-# === Vertex AI Init ===
-print("[Startup] Initializing Vertex AI...")
-aiplatform.init(
-    project="brainrot-learning-4052",
-    location="us-central1"
-)
-print("[Startup] Vertex AI initialized ✅")
+# === Load Environment Variables ===
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
+# === App Initialization ===
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
@@ -66,17 +63,6 @@ def synthesize_speech(text, speaker):
     except Exception as e:
         print(f"[ERROR] ElevenLabs synthesis failed: {e}")
         return None
-
-# === Vertex AI LLM ===
-ques_parameters = {
-    "model_name": "gemini-1.0-pro",
-    "max_output_tokens": 2048,
-    "temperature": 0.3,
-    "top_p": 0.8,
-    "top_k": 40,
-    "verbose": True,
-}
-question_llm = VertexAI(**ques_parameters)
 
 # === Helper: Extract .pptx text ===
 def extract_pptx_text(filepath):
@@ -130,9 +116,16 @@ End the conversation when you have explained all the key ideas.
         print(f"[LLM] Processing chunk {i+1}/{len(docs)}")
         try:
             formatted_prompt = prompt.format(text=chunk.page_content)
-            response = question_llm.invoke(formatted_prompt)
+            response = openai.chat.completions.create(
+                messages=[
+                    {"role": "system", "content": "You are a helpful assistant generating a brainrot-style conversation between two students."},
+                    {"role": "user", "content": formatted_prompt}
+                ],
+                model="gpt-4o"
+            )
+            result_text = response.choices[0].message.content.strip()
+            lines = [line.strip() for line in result_text.split("\n") if ":" in line]
 
-            lines = [line.strip() for line in response.split("\n") if ":" in line]
             for line in lines:
                 speaker, message = line.split(":", 1)
                 speaker = speaker.strip()
