@@ -41,6 +41,22 @@
             margin-top: 1rem;
             width: 100%;
         }
+        #loading-section {
+            display: none;
+            margin-top: 2rem;
+        }
+        #progress-container {
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        #progress-bar {
+            height: 20px;
+            width: 0%;
+            background-color: #6A0DAD;
+            transition: width 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +67,13 @@
         <input type="file" name="pdf_file" accept=".pdf,.pptx" required>
         <button type="submit">Generate Conversation</button>
     </form>
+
+    <div id="loading-section">
+        <p style="font-weight: bold; color: #6A0DAD;">🌀 Generating conversation and audio... please wait!</p>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
 
     {% if conversation %}
         <h2>🗣️ Generated Conversation</h2>
@@ -65,24 +88,49 @@
             <source id="podcast-source" src="" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
+    {% endif %}
 
-        <script>
-            window.addEventListener('load', async () => {
-                try {
-                    const response = await fetch('/generate_full_audio');
-                    const data = await response.json();
-                    if (data.status === "success") {
-                        const audio = document.getElementById('podcast-audio');
-                        const source = document.getElementById('podcast-source');
-                        source.src = `/${data.audio_file}`;
-                        audio.load();
-                        audio.play();
-                    }
-                } catch (err) {
-                    console.error("Audio generation failed:", err);
+    <script>
+        const form = document.querySelector('form');
+        const loadingSection = document.getElementById('loading-section');
+        const progressBar = document.getElementById('progress-bar');
+
+        form.addEventListener('submit', () => {
+            loadingSection.style.display = 'block';
+            progressBar.style.width = '5%';
+        });
+    </script>
+
+    {% if conversation %}
+    <script>
+        window.addEventListener('load', async () => {
+            try {
+                progressBar.style.width = '40%';
+
+                const response = await fetch('/generate_full_audio');
+                progressBar.style.width = '70%';
+
+                const data = await response.json();
+
+                if (data.status === "success") {
+                    const audio = document.getElementById('podcast-audio');
+                    const source = document.getElementById('podcast-source');
+                    source.src = data.audio_file;
+                    audio.load();
+                    audio.play();
+
+                    progressBar.style.width = '100%';
+                    setTimeout(() => {
+                        loadingSection.style.display = 'none';
+                    }, 1000);
                 }
-            });
-        </script>
+            } catch (err) {
+                console.error("Audio generation failed:", err);
+                progressBar.style.width = '100%';
+                loadingSection.innerHTML = "<p style='color: red;'>❌ Something went wrong. Please try again.</p>";
+            }
+        });
+    </script>
     {% endif %}
 </body>
 </html>

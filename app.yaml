@@ -1,0 +1,10 @@
+runtime: python311  # ✅ Must be one of the supported versions: python39, python310, python311
+entrypoint: uvicorn app:app --host=0.0.0.0 --port=8080
+
+env_variables:
+  OPENAI_API_KEY: "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"
+  ELEVENLABS_API_KEY: "sk_0cb3804c999028f6d57b4bc017a18d21eec77aa40d0a7981"
+
+handlers:
+  - url: /.*
+    script: auto

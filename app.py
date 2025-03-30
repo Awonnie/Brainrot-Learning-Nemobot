@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request, UploadFile, File
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 
 from langchain.docstore.document import Document
 from langchain_community.document_loaders.pdf import PyPDFLoader
@@ -40,6 +40,11 @@ VOICE_IDS = {
     "Chao Mugger": "CwhRBWXzGAHq8TQ4Fs17"
 }
 
+# === Graceful favicon fallback ===
+@app.get("/favicon.ico")
+async def favicon():
+    return Response(status_code=204)
+
 # === Speech Synthesis ===
 def synthesize_speech(text, speaker):
     voice_id = VOICE_IDS.get(speaker)
@@ -55,10 +60,10 @@ def synthesize_speech(text, speaker):
             output_format="mp3_44100_128"
         )
 
-        audio_bytes = b"".join(audio_gen)
-        audio_path = f"static/audio/{uuid.uuid4()}.mp3"
+        os.makedirs("/tmp/audio/", exist_ok=True)
+        audio_path = f"/tmp/audio/{uuid.uuid4()}.mp3"
         with open(audio_path, "wb") as f:
-            f.write(audio_bytes)
+            f.write(b"".join(audio_gen))
         return audio_path
     except Exception as e:
         print(f"[ERROR] ElevenLabs synthesis failed: {e}")
@@ -68,6 +73,17 @@ def synthesize_speech(text, speaker):
 def extract_pptx_text(filepath):
     prs = Presentation(filepath)
     return "\n".join(shape.text for slide in prs.slides for shape in slide.shapes if hasattr(shape, "text"))
+
+def clean_temp_audio_dir():
+    audio_dir = "/tmp/audio/"
+    if os.path.exists(audio_dir):
+        for filename in os.listdir(audio_dir):
+            filepath = os.path.join(audio_dir, filename)
+            try:
+                os.remove(filepath)
+            except Exception as e:
+                print(f"[WARN] Failed to remove {filepath}: {e}")
+
 
 # === Generate Brainrot Conversation ===
 def generate_brainrot_convo(file_path):
@@ -143,9 +159,6 @@ End the conversation when you have explained all the key ideas.
 
     return conversation_data
 
-@app.get("/favicon.ico")
-async def favicon():
-    return FileResponse("static/favicon.ico")
 
 @app.get("/")
 async def home(request: Request):
@@ -153,17 +166,18 @@ async def home(request: Request):
 
 @app.post("/brainrot_chatbot")
 async def brainrot_chatbot(request: Request, pdf_file: UploadFile = File(...)):
-    base_folder = "static/docs/"
-    os.makedirs(base_folder, exist_ok=True)
-    os.makedirs("static/audio/", exist_ok=True)
-
-    file_path = os.path.join(base_folder, pdf_file.filename)
+    docs_folder = "/tmp/docs/"
+    os.makedirs(docs_folder, exist_ok=True)
+    clean_temp_audio_dir()
+    file_path = os.path.join(docs_folder, pdf_file.filename)
     async with aiofiles.open(file_path, "wb") as f:
         await f.write(await pdf_file.read())
 
     convo_output = generate_brainrot_convo(file_path)
 
-    with open("static/output/brainrot_convo.json", "w", encoding="utf-8") as f:
+    os.makedirs("/tmp/output/", exist_ok=True)
+    output_json = "/tmp/output/brainrot_convo.json"
+    with open(output_json, "w", encoding="utf-8") as f:
         json.dump({"conversation": convo_output}, f, indent=2)
 
     return templates.TemplateResponse("brainrot.html", {
@@ -175,7 +189,7 @@ async def brainrot_chatbot(request: Request, pdf_file: UploadFile = File(...)):
 async def generate_full_audio():
     print("[🔊] Generating full podcast-style audio with alternating voices...")
 
-    json_path = "static/output/brainrot_convo.json"
+    json_path = "/tmp/output/brainrot_convo.json"
     with open(json_path, "r", encoding="utf-8") as f:
         convo_data = json.load(f)
 
@@ -189,8 +203,9 @@ async def generate_full_audio():
             segment = AudioSegment.from_mp3(audio_path)
             podcast_audio += segment + AudioSegment.silent(duration=300)
 
-    final_audio_path = "static/audio/brainrot_full_audio.mp3"
+    final_audio_path = "/tmp/audio/brainrot_full_audio.mp3"
     podcast_audio.export(final_audio_path, format="mp3")
+    clean_temp_audio_dir()
 
     return {
         "status": "success",
@@ -198,6 +213,7 @@ async def generate_full_audio():
         "audio_file": final_audio_path
     }
 
+
 if __name__ == "__main__":
     print("[Startup] Launching FastAPI server...")
-    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
