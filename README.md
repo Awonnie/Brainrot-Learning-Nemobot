@@ -1,10 +1,10 @@
-# 🧠 Brainrot Learning Chatbot
+# Brainrot Learning Chatbot
 
 Upload your lecture slides (PDF or PPTX), and get a funny, conversational-style summary between a blur sotong and a chao mugger — perfect for brainrot learning and memory reinforcement. The chatbot even speaks to you using real voices, powered by ElevenLabs!
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **FastAPI** — backend server  
 - **Vertex AI (Gemini 1.0 Pro)** via `langchain-google-vertexai`  
@@ -16,34 +16,34 @@ Upload your lecture slides (PDF or PPTX), and get a funny, conversational-style 
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Upload any **PDF** or **PPTX** lecture file  
-- 📖 Extracts slide content automatically  
-- 🧠 Generates a full **chat-style explanation** between:
+- Upload any **PDF** or **PPTX** lecture file  
+- Extracts slide content automatically  
+- Generates a full **chat-style explanation** between:
   - **Blur Sotong** (confused student)
   - **Chao Mugger** (hardworking student)
-- 🔊 Automatically generates **realistic voice audio** for both characters  
-- 🎧 Stitches audio into a **playable conversation podcast**
+- Automatically generates **realistic voice audio** for both characters  
+- Stitches audio into a **playable conversation podcast**
 
 ---
 
-## 🔧 Local Setup Instructions
+## Local Setup Instructions
 
-### 1. 🔁 Clone the repo
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/yourusername/brainrot-learning-chatbot.git
 cd brainrot-learning-chatbot
 ```
 
-### 2. 📦 Create a virtual environment (optional but recommended)
+### 2. Create a virtual environment (optional but recommended)
 ```bash
 python -m venv venv
 source venv/bin/activate  # or `.\venv\Scripts\activate` on Windows
 ```
 
-### 3. 📥 Install all dependencies
+### 3. Install all dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -56,7 +56,7 @@ langchain langchain-community langchain-google-vertexai \
 google-cloud-aiplatform
 ```
 
-### 4. 🔉 Install FFmpeg (required for audio merging)
+### 4. Install FFmpeg (required for audio merging)
 ```bash
 brew install ffmpeg
 ```
@@ -69,7 +69,7 @@ sudo apt install ffmpeg
 
 ## ☁️ Vertex AI Setup (Required for LLM)
 
-### 1. ✅ Install Google Cloud SDK
+### 1. Install Google Cloud SDK
 If you don’t have `gcloud` installed:
 
 ```bash
@@ -79,14 +79,14 @@ brew install --cask google-cloud-sdk
 Or follow the manual installer:  
 https://cloud.google.com/sdk/docs/install
 
-### 2. 🔐 Authenticate your machine
+### 2. Authenticate your machine
 ```bash
 gcloud auth application-default login
 ```
 
 This opens a browser. Sign in with your Google account that has Vertex AI enabled.
 
-### 3. 🏷 Set your Google Cloud project
+### 3. Set your Google Cloud project
 Your project info:
 
 - **Project ID:** `brainrot-learning-4052`
@@ -103,7 +103,7 @@ aiplatform.init(
 )
 ```
 
-### 4. 🔊 ElevenLabs Setup
+### 4. ElevenLabs Setup
 
 1. Create an account: https://www.elevenlabs.io
 2. Get your API key
@@ -126,7 +126,7 @@ Then open: [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 .
