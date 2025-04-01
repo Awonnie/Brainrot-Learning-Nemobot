@@ -203,15 +203,17 @@ async def generate_full_audio():
             segment = AudioSegment.from_mp3(audio_path)
             podcast_audio += segment + AudioSegment.silent(duration=300)
 
-    final_audio_path = "/tmp/audio/brainrot_full_audio.mp3"
+    final_audio_path = "/tmp/brainrot_full_audio.mp3"
     podcast_audio.export(final_audio_path, format="mp3")
-    clean_temp_audio_dir()
 
     return {
         "status": "success",
-        "message": "Podcast audio generated with alternating voices.",
-        "audio_file": final_audio_path
+        "audio_file": "/download_audio"  # <- this serves the file
     }
+
+@app.get("/download_audio")
+async def download_audio():
+    return FileResponse("/tmp/brainrot_full_audio.mp3", media_type="audio/mpeg", filename="brainrot_full_audio.mp3")
 
 
 if __name__ == "__main__":

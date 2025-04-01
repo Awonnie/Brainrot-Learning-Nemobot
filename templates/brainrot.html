@@ -57,6 +57,18 @@
             background-color: #6A0DAD;
             transition: width 0.5s ease-in-out;
         }
+        .download-link {
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            color: white;
+            background-color: #6A0DAD;
+            padding: 0.6rem 1rem;
+            border-radius: 5px;
+        }
+        .download-link:hover {
+            background-color: #5c0cb3;
+        }
     </style>
 </head>
 <body>
@@ -88,37 +100,50 @@
             <source id="podcast-source" src="" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
+
+        <a id="download-button" href="#" class="download-link" download>⬇️ Download Full Audio</a>
     {% endif %}
 
     <script>
         const form = document.querySelector('form');
         const loadingSection = document.getElementById('loading-section');
         const progressBar = document.getElementById('progress-bar');
-
+    
         form.addEventListener('submit', () => {
             loadingSection.style.display = 'block';
             progressBar.style.width = '5%';
         });
     </script>
-
+    
     {% if conversation %}
     <script>
         window.addEventListener('load', async () => {
+            const audio = document.getElementById('podcast-audio');
+            const source = document.getElementById('podcast-source');
+            const downloadBtn = document.getElementById('download-button');
+    
             try {
                 progressBar.style.width = '40%';
-
+    
                 const response = await fetch('/generate_full_audio');
-                progressBar.style.width = '70%';
-
                 const data = await response.json();
-
+    
+                progressBar.style.width = '70%';
+    
                 if (data.status === "success") {
-                    const audio = document.getElementById('podcast-audio');
-                    const source = document.getElementById('podcast-source');
-                    source.src = data.audio_file;
+                    const audioUrl = data.audio_file;
+                    source.src = audioUrl;
                     audio.load();
-                    audio.play();
-
+    
+                    // Wait for audio to load before playing
+                    audio.oncanplaythrough = () => {
+                        audio.play();
+                    };
+    
+                    // Enable download
+                    downloadBtn.href = audioUrl;
+                    downloadBtn.style.display = 'inline-block';
+    
                     progressBar.style.width = '100%';
                     setTimeout(() => {
                         loadingSection.style.display = 'none';
@@ -126,11 +151,11 @@
                 }
             } catch (err) {
                 console.error("Audio generation failed:", err);
-                progressBar.style.width = '100%';
                 loadingSection.innerHTML = "<p style='color: red;'>❌ Something went wrong. Please try again.</p>";
             }
         });
     </script>
     {% endif %}
+    
 </body>
 </html>
