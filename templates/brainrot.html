@@ -73,19 +73,12 @@
 </head>
 <body>
     <h1>🧠 Brainrot Learning Chatbot</h1>
-    <p>Upload your lecture slides (PDF or PPTX), and get a conversation between a blur sotong & a chao mugger!</p>
+    <p>Upload your lecture slides (PDF or PPTX), and get a conversation between a blur sotong & a smart mugger!</p>
 
     <form action="/brainrot_chatbot" method="post" enctype="multipart/form-data">
         <input type="file" name="pdf_file" accept=".pdf,.pptx" required>
         <button type="submit">Generate Conversation</button>
     </form>
-
-    <div id="loading-section">
-        <p style="font-weight: bold; color: #6A0DAD;">🌀 Generating conversation and audio... please wait!</p>
-        <div id="progress-container">
-            <div id="progress-bar"></div>
-        </div>
-    </div>
 
     {% if conversation %}
         <h2>🗣️ Generated Conversation</h2>
@@ -95,67 +88,59 @@
 {% endfor %}
         </textarea>
 
-        <h3>🎧 Listen to the Podcast</h3>
-        <audio id="podcast-audio" controls autoplay>
-            <source id="podcast-source" src="" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-
-        <a id="download-button" href="#" class="download-link" download>⬇️ Download Full Audio</a>
+        <div id="audio-controls" style="margin-top: 2rem;">
+            <h3>🎧 Audio Options</h3>
+            <button id="generate-audio-btn">Generate Audio</button>
+            <div id="audio-section" style="display: none; margin-top: 1rem;">
+                <audio id="podcast-audio" controls>
+                    <source id="podcast-source" src="" type="audio/mp3">
+                </audio>
+                <a id="download-button" href="#" class="download-link" download>⬇️ Download Audio</a>
+            </div>
+        </div>
     {% endif %}
 
     <script>
-        const form = document.querySelector('form');
-        const loadingSection = document.getElementById('loading-section');
-        const progressBar = document.getElementById('progress-bar');
-    
-        form.addEventListener('submit', () => {
-            loadingSection.style.display = 'block';
-            progressBar.style.width = '5%';
-        });
-    </script>
-    
-    {% if conversation %}
-    <script>
-        window.addEventListener('load', async () => {
-            const audio = document.getElementById('podcast-audio');
-            const source = document.getElementById('podcast-source');
-            const downloadBtn = document.getElementById('download-button');
-    
-            try {
-                progressBar.style.width = '40%';
-    
-                const response = await fetch('/generate_full_audio');
-                const data = await response.json();
-    
-                progressBar.style.width = '70%';
-    
-                if (data.status === "success") {
-                    const audioUrl = data.audio_file;
-                    source.src = audioUrl;
-                    audio.load();
-    
-                    // Wait for audio to load before playing
-                    audio.oncanplaythrough = () => {
-                        audio.play();
-                    };
-    
-                    // Enable download
-                    downloadBtn.href = audioUrl;
-                    downloadBtn.style.display = 'inline-block';
-    
-                    progressBar.style.width = '100%';
-                    setTimeout(() => {
-                        loadingSection.style.display = 'none';
-                    }, 1000);
+        const generateBtn = document.getElementById('generate-audio-btn');
+        const audioSection = document.getElementById('audio-section');
+        const audioElement = document.getElementById('podcast-audio');
+        const sourceElement = document.getElementById('podcast-source');
+        const downloadBtn = document.getElementById('download-button');
+
+        if (generateBtn) {
+            generateBtn.addEventListener('click', async () => {
+                generateBtn.disabled = true;
+                generateBtn.textContent = 'Generating...';
+                
+                try {
+                    const response = await fetch('/generate_full_audio', {
+                        method: 'POST'
+                    });
+                    const data = await response.json();
+                    
+                    if (data.status === "success") {
+                        sourceElement.src = data.audio_file;
+                        audioElement.load();
+                        
+                        audioElement.oncanplaythrough = () => {
+                            audioSection.style.display = 'block';
+                            downloadBtn.href = data.audio_file;
+                            generateBtn.textContent = 'Regenerate Audio';
+                            generateBtn.disabled = false;
+                        };
+                    } else {
+                        alert('Error generating audio: ' + data.message);
+                        generateBtn.textContent = 'Generate Audio';
+                        generateBtn.disabled = false;
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Failed to generate audio');
+                    generateBtn.textContent = 'Generate Audio';
+                    generateBtn.disabled = false;
                 }
-            } catch (err) {
-                console.error("Audio generation failed:", err);
-                loadingSection.innerHTML = "<p style='color: red;'>❌ Something went wrong. Please try again.</p>";
-            }
-        });
+            });
+        }
     </script>
-    {% endif %}
-    
 </body>
 </html>
