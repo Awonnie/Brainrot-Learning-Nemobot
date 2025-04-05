@@ -122,9 +122,14 @@ export ELEVENLABS_API_KEY="your_key_here"
 python app.py
 ```
 
-Then open: [http://localhost:8000](http://localhost:8000)
+## ▶️ Deploying the App on Google Cloud
 
----
+```bash
+gcloud app deploy
+```
+```bash
+gcloud app browse
+```
 
 ## Folder Structure
 
