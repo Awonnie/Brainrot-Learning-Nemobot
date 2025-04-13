@@ -2,53 +2,1048 @@
   "conversation": [
     {
       "speaker": "Blur Sotong",
-      "text": "What's this LLM Apps using Nemobot thingy all about? Sounds like some futuristic robot.",
-      "audio_path": "static/audio/4d93d271-b599-477f-b69f-6874def5e507.mp3"
+      "text": "Wait, what's the point of this letter? I don't get it at all.",
+      "audio_path": "static/audio/ce0923b2-1b34-4066-825d-6cfe4222ede2.mp3"
     },
     {
-      "speaker": "Chao Mugger",
-      "text": "Haha, it does sound a bit sci-fi! LLM stands for Large Language Models, which are a type of artificial intelligence that processes and generates human-like text. Nemobot SaaS is a platform or service that helps you create applications using these models.",
-      "audio_path": "static/audio/d087f2b6-5af0-4b6f-82a7-7aeddf8f6219.mp3"
-    },
-    {
-      "speaker": "Blur Sotong",
-      "text": "Why do they even call it software as a service? Sounds pretty fancy for just using software.",
-      "audio_path": "static/audio/38849bcb-2ae8-4519-adba-9a02c5a5f5b2.mp3"
-    },
-    {
-      "speaker": "Chao Mugger",
-      "text": "Well, \"Software as a Service\" or SaaS is a way of delivering applications over the internet as a service rather than having them installed locally. It allows users to access software via a subscription or pay-as-you-go model, so they don't need to worry about things like infrastructure or updates.",
-      "audio_path": "static/audio/4188528c-afe5-42d8-836e-4e30f96f834a.mp3"
+      "speaker": "Smart Mugger",
+      "text": "This is an example of plain text communication. It's a simple message that anyone who reads the language can understand.",
+      "audio_path": "static/audio/29ad2e7b-157b-4dd9-bbe1-0fe9b14d0bca.mp3"
     },
     {
       "speaker": "Blur Sotong",
-      "text": "So, this is for their Bachelor of Engineering project, right? Why are they studying LLMs at all?",
-      "audio_path": "static/audio/6c13a1d1-0793-4d32-9ae9-2b9ea1ca7e1f.mp3"
+      "text": "But why is Alice inviting Bob to a hotel? Is this about movies?",
+      "audio_path": "static/audio/97719984-0a66-4af4-bc1a-17200b7f6c3c.mp3"
     },
     {
-      "speaker": "Chao Mugger",
-      "text": "Right, this is part of their degree requirement. They study LLMs because it's a rapidly growing field in AI that has many practical applications, like chatbots, translation services, and even creativity tools. Understanding LLMs helps in developing more intelligent and interactive software.",
-      "audio_path": "static/audio/7ed28944-17dd-4b30-accb-cc3d850dfc1c.mp3"
-    },
-    {
-      "speaker": "Blur Sotong",
-      "text": "Why are they using something called Nemobot though? Can't they just use any software to work with LLMs?",
-      "audio_path": "static/audio/2401cda7-48b1-41d7-9c66-77b43a7abd38.mp3"
-    },
-    {
-      "speaker": "Chao Mugger",
-      "text": "Nemobot probably provides a user-friendly and efficient way to implement LLMs into applications. It might have some features or integrations that make it easier for developers, particularly students, to work with complex models without re-inventing the wheel.",
-      "audio_path": "static/audio/89b75f42-07cf-411f-bebc-aefa10846c4f.mp3"
+      "speaker": "Smart Mugger",
+      "text": "Alice is probably suggesting they meet to talk about his problems with his new movie. The hotel is just a meeting place.",
+      "audio_path": "static/audio/d17fe574-c1db-48a3-b070-d4cf0c3fc11d.mp3"
     },
     {
       "speaker": "Blur Sotong",
-      "text": "This stuff sounds really cool but overwhelming at the same time. Is this kind of technology the future?",
-      "audio_path": "static/audio/bade0872-daa9-41ec-9eba-eb08b1b737e3.mp3"
+      "text": "Oh, so why is this even in our notes? What's it teaching us?",
+      "audio_path": "static/audio/05dab357-840c-4f87-a7ce-1caf027cdc75.mp3"
     },
     {
-      "speaker": "Chao Mugger",
-      "text": "Absolutely, it\u2019s a big part of the future of tech. As more applications start using AI for improved user experiences, understanding and working with technologies like LLMs will be very important. It's fascinating and a bit overwhelming, but it\u2019s also very exciting to be involved in.",
-      "audio_path": "static/audio/d744ed08-4bb6-4c2f-9ae0-371fab726a3f.mp3"
+      "speaker": "Smart Mugger",
+      "text": "It's illustrating how plain text works. The text is straightforward and doesn't require special software or codes to read.",
+      "audio_path": "static/audio/b17a6332-237d-405e-b7d0-3a27c4393ad6.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So, like, why use plain text instead of something fancy?",
+      "audio_path": "static/audio/4cd86099-48c0-4776-8006-ea279612fa05.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Plain text is versatile and accessible on any device or software that supports the language. It's great for universal understanding!",
+      "audio_path": "static/audio/ea9a404c-e671-4edc-b8a4-1e1fc6919be2.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, but what if Alice wanted to keep this message secret?",
+      "audio_path": "static/audio/ce0c4017-e7aa-4171-a46a-44c769b094cf.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "She'd need to use something more secure, like encryption, to keep it private.",
+      "audio_path": "static/audio/56ee3d69-c619-48d6-a219-82f57fceec55.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Encryption? Isn't that complicated?",
+      "audio_path": "static/audio/bfd70577-d231-42c2-b909-16e994d4d334.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not really! It just means converting the message into a code, so only Bob, or someone with the key, can read it.",
+      "audio_path": "static/audio/46b49c47-a1e8-4bfc-aa45-70c118ad9bbe.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Got it. So plain text is just... plain?",
+      "audio_path": "static/audio/46ba2c90-2085-4d00-959a-9e859441b9e5.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! It's simple and clear for sharing straightforward information.",
+      "audio_path": "static/audio/7ea0ae16-1ea8-4158-a0ec-99524f28c70b.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Thanks, that makes more sense now! Why didn't they just call or text?",
+      "audio_path": "static/audio/b1d7079c-e2de-4bbd-835d-482cd040aed6.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They might have, but the lecture notes needed a written example to illustrate the concept. Written examples last longer and can be archived or cited.",
+      "audio_path": "static/audio/3840fc1c-5fdd-4832-bf68-5d6cb847ab36.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ah, got it! So it's about the simplicity and permanence of plain text. Cool!",
+      "audio_path": "static/audio/0e48d54d-f996-4696-94bd-f46c7312649b.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, what's \"cipher text\"? Is it like some weird font or something?",
+      "audio_path": "static/audio/385c3f52-8423-456f-9fb4-e62bbc75a2f6.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not quite. Cipher text is a way of encoding a message so that only someone who knows how it was encoded can understand it. It's basically a secret code.",
+      "audio_path": "static/audio/a170b526-3810-49b2-9a75-4a9645aefe4c.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ohhh, so it's like when I write notes to myself in a made-up language?",
+      "audio_path": "static/audio/f4a79093-9c82-48a5-8de0-de86e8a27f12.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, exactly! But usually, cipher text uses techniques or schemes that are a bit more systematic, like shifting letters or using substitution.",
+      "audio_path": "static/audio/c1725655-4dcd-42e1-9ffa-f6afab81fb13.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Hmm, so this \"15 Kl Ere\" message, it's gibberish, right? How do you even make sense out of that?",
+      "audio_path": "static/audio/80b91d5c-4c8f-450a-9d00-fb040c998c0e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "The numbers and letters suggest that it's a Caesar cipher. It's a simple type of cipher where each letter is shifted a certain number of places down the alphabet.",
+      "audio_path": "static/audio/dc877794-7e90-481f-8719-8a5e324b4640.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Whoa, so what's the deal with the number 15 then?",
+      "audio_path": "static/audio/7098627f-6d2b-48f9-9f9f-46c425e1ff05.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "The '15' likely represents the number of positions each letter is shifted. For instance, in the alphabet, the letter 'A' would become 'P' because it's moved 15 letters forward.",
+      "audio_path": "static/audio/3c36c4dc-389d-4bf6-88ac-3122f32e6a0d.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ah, okay! But how can you tell what the actual message says then?",
+      "audio_path": "static/audio/5b0e22a0-df0c-4db8-880e-62b2f8d9dd8a.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "You just reverse the shift. For this, you could take the letter and shift it 15 places backward in the alphabet. For example, 'K' shifted 15 letters back is 'V'.",
+      "audio_path": "static/audio/e012818e-f68a-4f7b-9041-a3ac40f398cc.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Got it. But isn't that too easy to crack? I mean, someone just has to try different numbers, right?",
+      "audio_path": "static/audio/a18d936f-9160-4f86-99e4-cd875b4d6a65.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "True, that's why Caesar ciphers are considered quite basic. More secure ciphers have more complex systems, like substituting letters randomly or using keys that change the substitution regularly.",
+      "audio_path": "static/audio/9dad8b25-97dc-44d1-ae37-346193a87411.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So these messages are like puzzles. Do real spies actually use these?",
+      "audio_path": "static/audio/ca8921c3-c6bc-48d5-bc96-eaee79c6ce8e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not usually. They use more advanced encryption methods now, but ciphers like this were popular historically. They're great for learning fundamental cryptography concepts!",
+      "audio_path": "static/audio/dd0fddbe-9440-46cc-8bd6-cb20a8b8bdf0.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Thanks, Mugger! Maybe I'll start encoding my diary with one of these.",
+      "audio_path": "static/audio/f6143431-4589-47eb-b890-608be0774e1e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "That could be fun, Blur! Just make sure to remember your key, or you'll be the one not understanding your notes!",
+      "audio_path": "static/audio/9d31f112-2b1a-42b0-807e-5205e2a07487.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What on earth is a cipher text? Is it some kind of ancient language?",
+      "audio_path": "static/audio/376f5741-f230-4b6f-8e3a-17bf0d9b9571.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not exactly, Blur. A cipher text is just a way of disguising a plain text message so that it's not easily readable. It's used for security purposes.",
+      "audio_path": "static/audio/d0acceb6-f651-4b90-a94b-fdbf1d830cbf.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, I see. But what's the deal with substitution and transposition? Are they like secret codes?",
+      "audio_path": "static/audio/19386cdf-5e73-4b35-8dbe-8a0dd3737184.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, in a way. Substitution involves replacing each letter in the message with another letter, like the Caesar Cipher that's mentioned here. Transposition, on the other hand, rearranges the letters without changing them.",
+      "audio_path": "static/audio/51a91dc6-f20b-4266-a179-7faba4e3d817.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ah, so with the Caesar Cipher, we're just shifting letters around? Why three places though?",
+      "audio_path": "static/audio/275a5a7b-ded3-4301-bc57-2e70e3ab277d.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "The number of places we shift depends on the specific cipher. The Caesar Cipher shifts each letter three spots down the alphabet, so \"A\" becomes \"D\", and \"b\" becomes \"e\".",
+      "audio_path": "static/audio/e80108b7-1895-41d2-92c1-7e4832548368.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Got it. So, is this something like what happens with puzzles sometimes?",
+      "audio_path": "static/audio/86b5f921-f8ba-44a6-9c4b-9d8546c26096.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "That's right, kind of like a puzzle. It's meant to encrypt the message, making it hard to read unless you know the specific key, which in this case is the shift number.",
+      "audio_path": "static/audio/63f65eb6-4438-4277-afb2-6b941accebd5.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh neat! So if I wanted to encrypt a message using a Caesar Cipher, I'd just shift every letter forward by three, right?",
+      "audio_path": "static/audio/508354ac-aa1e-4a84-ad03-1230f2adf35d.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! You can also shift backward, but the basic idea is to move each letter consistently by the same number, which is your key.",
+      "audio_path": "static/audio/d408803d-542d-4bba-9750-5222d8c0c316.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "And transposition just means scrambling things up, like a mixed-up jigsaw puzzle?",
+      "audio_path": "static/audio/ad6c6bd2-634a-4b4e-a254-87337475dfca.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, transposition focuses on rearranging the letters, so the sequence changes while the actual letters stay the same. Both methods aim to make the message secure.",
+      "audio_path": "static/audio/15ade511-36df-43e4-b092-968466935671.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "This is cool! But why not just always use these ciphers to keep secrets?",
+      "audio_path": "static/audio/b1005b65-09f7-4fcf-bb7e-1de714265487.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They can be cracked if someone knows or guesses the method. So, in reality, we use more complex encryption methods now. These are like the building blocks.",
+      "audio_path": "static/audio/483ebaeb-487b-4ceb-9f81-50847ceba4ac.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Thanks, Smart Mugger! I think I\u2019m starting to get the hang of it. Let's try encrypting something next!",
+      "audio_path": "static/audio/e1b2bcb5-50ec-47b6-a50b-38e698997674.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What's a modified Caesar cipher? I'm so lost.",
+      "audio_path": "static/audio/ed808ccb-0962-47c0-916d-1518e25dade7.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's like the regular Caesar cipher, but you replace each letter with one that's k positions down the alphabet. So if k is 3, 'A' becomes 'D'.",
+      "audio_path": "static/audio/3c4bdbbf-56cc-4d8c-9587-86827b700ee9.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so how do you find out what k is if you don't know it?",
+      "audio_path": "static/audio/75a6a11e-c6e6-4fe3-a28b-7c0d5eb33d79.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "You try shifting the text 1 to 25 times to see which one makes sense. Since there are only 25 possibilities, you'll find the right k eventually.",
+      "audio_path": "static/audio/5be90660-25c5-4939-a9de-2525228fb605.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But what if it's not in order? Like, can you just swap letters randomly?",
+      "audio_path": "static/audio/89102b6b-0631-4fdf-804e-08fd13ed7879.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, that's called a random substitution. Instead of shifting by a fixed number, you replace each letter with a random different one.",
+      "audio_path": "static/audio/9d284097-9370-48bd-9d92-d2410aeb8e96.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "How do you decipher a random substitution then?",
+      "audio_path": "static/audio/cebd27e5-cb12-41e4-9b12-a4ee47e2317f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's trickier. You'd need to analyze the frequency of letters or use other patterns in the text, like common words.",
+      "audio_path": "static/audio/6f42d290-11b5-40fd-8a9f-deabdca518ba.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "And what's a polygram substitution cipher?",
+      "audio_path": "static/audio/e51c5c1d-6d25-412a-87fb-bc64ac31acaf.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "That's when you replace blocks of letters instead of just single ones. So a word like \"HELLO\" could become \"YUQQW\" instead of converting each letter individually.",
+      "audio_path": "static/audio/a06e83fc-5f62-4e28-823b-779a9335ac03.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Sounds complex. Does \"HELLO\" always become \"YUQQW\"?",
+      "audio_path": "static/audio/2778c0a3-1be1-4b93-a7eb-f9ce3b087b14.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not necessarily. It depends on the predefined set of substitutions, which could be different each time depending on the cipher.",
+      "audio_path": "static/audio/42ab4b94-23be-4994-b250-e0193703db2e.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Do people actually use these codes?",
+      "audio_path": "static/audio/18586990-e9d7-4a97-a52b-b02513c69778.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Historically, they were popular, but now they're mainly for puzzles or educational purposes since computers can crack them quickly.",
+      "audio_path": "static/audio/19d96589-5e11-4208-b106-b0627490db09.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ah, okay. So we just learn them for fun now?",
+      "audio_path": "static/audio/ff05ab7e-4126-4e6e-8c36-91b45cafc925.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! They're great for understanding the basics of cryptography but aren't used for secure communications today.",
+      "audio_path": "static/audio/65ca0f4a-bf9a-4bbd-8ec9-5da8bb3eb9d2.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What is this transposition thing? I'm so lost.",
+      "audio_path": "static/audio/19bfec9b-e2fb-45c8-b85d-a2da71ed1388.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Transposition is a technique where you rearrange the letters of the plaintext to form the ciphertext, unlike substitution which replaces them.",
+      "audio_path": "static/audio/bce49f97-7237-4f54-8674-3e9d8935ff7c.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so it\u2019s like shuffling the letters around? How does that even make sense?",
+      "audio_path": "static/audio/4c41e6a4-1209-4add-b32d-910abdb444c9.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! One way to do this is using the Rail Fence Technique, where you write the text in a zigzag pattern on multiple \"rails\" or lines.",
+      "audio_path": "static/audio/c5e314ae-dbf5-469c-8cdd-869c4c1eeda0.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Rails? You mean like train tracks?",
+      "audio_path": "static/audio/3409047b-c715-4679-85c5-0930147a3ae9.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Kind of! Imagine writing \"HELLOWORLD\" by writing it diagonally across two lines: H L O O L and E W R D. Then you read it row by row: HLOOL EWRD becomes the ciphertext.",
+      "audio_path": "static/audio/357d3ddc-ea2f-415b-8f27-ed53ed8186bb.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ohhh, so I write diagonally and then read horizontally? But why would anyone do that?",
+      "audio_path": "static/audio/0e324d92-4f30-4801-b2d5-884d8e93f32e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's a simple way to obscure the message. By permuting the letters, it makes the original message harder to decode without knowing the pattern or the number of rails used.",
+      "audio_path": "static/audio/eb9367fa-263f-47d1-ab10-4a9b7a93861e.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "How do I decide how many rails to use?",
+      "audio_path": "static/audio/93c0dd80-56e5-4b91-bd97-4a416f90e30f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It\u2019s part of the secret key. The number of rails affects the length of the rails and the end result, so you need it to both encode and decode the message.",
+      "audio_path": "static/audio/ec424b0a-59a5-47ad-bae0-15c99c6735c5.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "This is kinda cool... but how do I get the original message back after all this zigzagging?",
+      "audio_path": "static/audio/5beda5d3-478b-47b6-a600-9db3c39e6a94.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Good question! To decrypt, you need to know the number of rails and follow the same zigzag pattern to reconstruct the original sequence.",
+      "audio_path": "static/audio/f62c8c03-5e54-4ccc-a256-c3874b505b82.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So as long as I have the number of rails, I can always decode it, right?",
+      "audio_path": "static/audio/eac2e785-91a0-4c23-a677-19862d646bdf.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, that\u2019s the key part of the process. Without knowing the number of rails, decoding would be like trying to solve a complex puzzle.",
+      "audio_path": "static/audio/5018a0ab-6c88-473e-9033-cb74c26f5f46.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Nice! I think I\u2019m getting it now. Thanks for clearing that up!",
+      "audio_path": "static/audio/a0c95274-686a-4126-a03f-130a0815c54a.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "No problem, anytime! Good luck with your ciphering!",
+      "audio_path": "static/audio/462f52d6-6a46-47c1-b04f-000ff7fd7820.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, what is transposition? Is it like changing the position of things?",
+      "audio_path": "static/audio/fba0ceb2-f600-457c-8953-cd81eb827c1a.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! In a transposition cipher, the letters of the plain text are rearranged according to a certain system to form the cipher text.",
+      "audio_path": "static/audio/9a2d5955-663d-48cd-8ff2-577b1dd4307f.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So how did they rearrange \"Come home tomorrow\" into \"Cmhmtmrooeoeoorw\"?",
+      "audio_path": "static/audio/7d540bf5-062a-4ab8-b39f-6471c85840fe.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They followed a specific pattern. Each column gets filled with letters one by one, then read off row by row.",
+      "audio_path": "static/audio/fd506831-483b-4d6b-8508-57a55d4c52a8.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Why would you read it like that? It's not really making sense yet.",
+      "audio_path": "static/audio/19702ac2-2cff-4dea-80b4-85bbaa58d650.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's a way to encrypt the message. By rearranging it into columns and reading off in rows, it hides the original order.",
+      "audio_path": "static/audio/4082a643-d090-420d-89bd-079fcc2f13dd.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, but how do you know how many columns to use?",
+      "audio_path": "static/audio/bbd4733e-51f2-47a2-926e-33095605741c.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Good question! In this example, they used 3 columns. You fill up each column with letters, then read across the rows.",
+      "audio_path": "static/audio/236959a3-ef9f-481b-87af-ca79b5e9ec08.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So, you pick the number of columns, fill them up, and read across?",
+      "audio_path": "static/audio/92c046a8-fd80-442b-a6b4-7bfbfb5955f0.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes! After deciding on the number of columns, just fill them up vertically and then read horizontally to create the cipher text.",
+      "audio_path": "static/audio/25141d86-a6d7-4e68-bd5b-5101a38f65db.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But, isn't it easy to crack if you know the number of columns?",
+      "audio_path": "static/audio/8e2795f9-951f-420b-86fa-b0d3630bfa2f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Well, it can be, which is why the exact method, like the number of columns, should be kept secret or combined with other techniques.",
+      "audio_path": "static/audio/63e3c33d-5ffe-4673-9527-31e27ac5326c.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "I get it now. It's like a puzzle to rearrange the letters. Does that make it a good encryption method today?",
+      "audio_path": "static/audio/1e0f110b-2ba7-4827-92aa-07077119ed40.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's more historical. Modern encryption uses more complex algorithms, but understanding this helps us see how cryptography evolved.",
+      "audio_path": "static/audio/62ee3976-b3df-4911-a933-00ad71ab1560.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Makes sense. Thanks for the breakdown! Maybe I can try encoding a message with it now.",
+      "audio_path": "static/audio/b86416e5-8f6a-4d7f-a243-1be1da2fb690.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Go for it! It's a fun way to practice and get a feel for how encryption started. Let me know if you need more help.",
+      "audio_path": "static/audio/33b488ca-dc15-4175-b135-311fbf9ecdc2.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What exactly is cryptography again?",
+      "audio_path": "static/audio/b0db1912-7b4a-4521-ab55-0ebba3d19e7a.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Cryptography is a method of encoding messages so they can be sent securely. It keeps the information hidden from anyone who isn't supposed to see it.",
+      "audio_path": "static/audio/985bdf86-1729-41f9-9067-f700c3540136.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so does that mean encryption is part of cryptography?",
+      "audio_path": "static/audio/d22112af-7575-4c7c-8a2c-9af2dddca4ac.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! Encryption is the process of converting plain text, like a normal message, into cipher text, which looks like gibberish to anyone who doesn't have the key to decode it.",
+      "audio_path": "static/audio/c13d8e9b-8b87-4244-acf9-626d09d08418.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "And decryption is turning the gibberish back into a normal message, right?",
+      "audio_path": "static/audio/cca39d07-ec66-4e07-9536-a347c559341d.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, decryption is the reverse of encryption. It's taking the cipher text and turning it back into plain text using the correct key.",
+      "audio_path": "static/audio/63a6cf4d-fb92-463b-b1fc-fb49b8fbec9b.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What about this brute-force attack? Sounds kind of aggressive.",
+      "audio_path": "static/audio/22586068-024d-4911-b8c4-b03ffbdb121e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It is a bit aggressive! A brute-force attack is when someone tries all possible combinations and permutations to figure out the key and decipher the message.",
+      "audio_path": "static/audio/83ff77bd-279d-4b8b-b468-cad949f01a41.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So, it's like trying every possible password until you get in?",
+      "audio_path": "static/audio/5d602996-d120-41b3-af66-17e25f257f76.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly, it's like guessing every possible password until you find the right one. That's why longer and more complex keys make such attacks much harder.",
+      "audio_path": "static/audio/a5b86d61-0fba-4fa7-88fc-c168516982d7.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, I see. Why don't we just use unbreakable keys then?",
+      "audio_path": "static/audio/78ec37ec-4681-4885-a630-5a208fee0d2d.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "In theory, unbreakable keys would be great, but in practice, creating and managing them can be very complex and resource-intensive. That's why we balance security with practicality.",
+      "audio_path": "static/audio/7f4423d3-b869-4041-924c-a94540ed4c67.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Thanks, Smart Mugger! This cryptography stuff is becoming clearer now.",
+      "audio_path": "static/audio/2d519f71-6578-4367-b634-e0edb7407b0a.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "You're welcome, Blur Sotong! Keep asking questions, and it'll be crystal clear in no time.",
+      "audio_path": "static/audio/45405157-de1c-4e04-ad2b-a4e36543156e.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, so what's this \"encryption/decryption\" thing about? I'm lost!",
+      "audio_path": "static/audio/04282959-62f0-444b-bdc0-bc9bb20f0af8.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's like locking and unlocking a message. Encryption is locking it so only someone with the key can unlock, or decrypt, it.",
+      "audio_path": "static/audio/5a045ba8-2c00-4865-b9f2-ffc24102daa8.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, but what's this algorithm that everyone knows? Isn't it supposed to be secret?",
+      "audio_path": "static/audio/2a5a26f3-8695-43f8-96e2-b0e85fec792e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "The algorithm itself is public, like a recipe. The secrecy comes from the key, which only the sender and receiver have.",
+      "audio_path": "static/audio/68c245d6-8553-401c-a4c9-10fbeb3f8591.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "If the algorithm's known, can't anyone just decrypt messages if they have it?",
+      "audio_path": "static/audio/653d1d24-dfef-47e9-81d7-e0df44212b52.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "No, because without the key, the algorithm is like a padlock without knowing the combination. It's just a piece of the puzzle.",
+      "audio_path": "static/audio/80402f62-6e81-47ca-8ed7-ccb1aa99e82e.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so the key is the most important part, right? How do they agree on a key?",
+      "audio_path": "static/audio/be0be52f-daec-43c8-b77a-5d66505ad0d0.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They agree on a method to exchange or share the key securely before sending an encrypted message. It's crucial for keeping the message secure.",
+      "audio_path": "static/audio/747169de-f8ca-426c-bf33-d7c14d7b0d9a.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But isn't it risky if someone intercepts the key?",
+      "audio_path": "static/audio/bba684ca-9d75-47c4-b749-b63175c6c749.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, which is why there are secure ways to exchange keys, like RSA or Diffie-Hellman, which make it very hard for outsiders to figure it out.",
+      "audio_path": "static/audio/fc542928-11eb-4de4-8e7c-11a71a5ade96.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wow, I'm just trying to get a message to my friend, and now it's like I'm in a spy movie!",
+      "audio_path": "static/audio/d7c80fda-9ac6-4550-94f0-625cd8bc1ceb.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Haha, kind of! But don't worry, it just means your messages stay private.",
+      "audio_path": "static/audio/91820bdd-ff66-4212-84a9-8608865db4a6.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So what's this cryptography thingy we're supposed to study?",
+      "audio_path": "static/audio/8354d247-6f2a-4907-a1cf-b506f6719417.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Cryptography is the study of techniques to secure communication, so that only the intended recipient can understand the message.",
+      "audio_path": "static/audio/50d71177-7054-40ee-af17-428abe60feb5.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, okay. But what's with these keys they keep talking about?",
+      "audio_path": "static/audio/4bb55653-44ca-4c30-a12b-f27d8d03a9c6.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Keys are used in cryptography to encrypt and decrypt messages. There are two main types: symmetric and asymmetric key cryptography.",
+      "audio_path": "static/audio/0c161af5-c97a-4778-9587-c32ca00d892c.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, what's the difference? Why can't they just use one method?",
+      "audio_path": "static/audio/57f25a30-eb76-465d-b251-197133eb42d9.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "In symmetric key cryptography, the same key is used for both encryption and decryption. It's fast and efficient but both sides need to have the same key, which can be risky.",
+      "audio_path": "static/audio/c0732967-8d87-4140-8c4f-fd3d56d5d80d.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But doesn't everyone then just get to know the key if it's the same?",
+      "audio_path": "static/audio/82b989c9-e15b-4263-99c1-c08af6969ada.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "That's the potential risk. If someone intercepts the key, they can decrypt the messages. That's why distributing the key securely is important.",
+      "audio_path": "static/audio/02c47ed1-d6f2-49cf-820c-f52e903237e4.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, so what's the asymmetric one then?",
+      "audio_path": "static/audio/44eeaef3-8349-4302-b367-fba5a689b02d.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Asymmetric key cryptography uses two different keys: a public key for encryption and a private key for decryption. Only the person with the private key can decrypt the message.",
+      "audio_path": "static/audio/85400d31-c056-4a5a-934f-3e148a6d8be3.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Why do we need two keys though? Isn\u2019t that complicated?",
+      "audio_path": "static/audio/2b11605f-6dc9-40ea-a236-591bc61edef6.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It adds security. You can share the public key with everyone, but only you have the private key. That way, only you can decrypt what others send you.",
+      "audio_path": "static/audio/20410da5-274f-4644-b5f0-7f4bfb09bdf0.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so it\u2019s like a mail lockbox where everyone can put letters in, but only I have the key to open it?",
+      "audio_path": "static/audio/14857d85-163f-47b9-9c7a-93e411a9ca25.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! That's a great way to think about it.",
+      "audio_path": "static/audio/bc55422c-90d3-44f9-9cba-47d0b5525992.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, I think I get it now. But which one is better to use?",
+      "audio_path": "static/audio/e2484a8a-f801-4c4c-8f5e-38b7e81ae1ad.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It depends on the situation. Symmetric is faster and good for large data, while asymmetric is more secure and good for exchanging keys securely. Often, they're used together.",
+      "audio_path": "static/audio/d9203ec6-6c89-4b76-baed-3e6a7e559e99.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wow, there\u2019s so much to it. I guess I need to read more to understand fully.",
+      "audio_path": "static/audio/9ae17bf2-3245-41d4-a84e-a681c224634f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "You\u2019re doing great! Keep at it, and it'll become clearer.",
+      "audio_path": "static/audio/2b325522-34a8-47b8-b8de-3b73f43a8c62.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, why do we need keys in cryptography again?",
+      "audio_path": "static/audio/d76cc02b-9dbe-450a-8c1c-89dace4cb4a9.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "We use keys to encrypt and decrypt messages so that only the intended recipient can read them. It's like a secret code.",
+      "audio_path": "static/audio/4a267719-5838-4a1e-ba39-58915aa7dcb0.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But how do we agree on a key if the channel is insecure?",
+      "audio_path": "static/audio/1bf398f4-9331-4255-84e4-d2ff6ac84cc3.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "That's where the Diffie-Hellman key exchange comes in. It allows two parties to securely share a secret key over an insecure channel.",
+      "audio_path": "static/audio/90a91e69-a71f-4b71-94e9-310f445d73db.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "How does this Diffie-Hellman thing work?",
+      "audio_path": "static/audio/14df33fd-5fc6-44a9-93d0-543bfded89b0.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Okay, both parties agree on two publicly shared numbers: a large prime number p and a base g.",
+      "audio_path": "static/audio/5eb51e3a-5e2c-4701-a800-495be3862e78.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "And these numbers aren't secret?",
+      "audio_path": "static/audio/30c18d55-e83b-4c9e-a9db-b9312cf5943a.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Correct, they're public. Then, each party selects a private random number, a and b.",
+      "audio_path": "static/audio/405ef2f7-5ae7-448b-9113-5ded7ad2c796.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So what happens next with these numbers?",
+      "audio_path": "static/audio/2ca36e4e-3fb2-496b-aa77-8e6f7521e211.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Each party calculates their public value. The first person computes g^a mod p, and the second computes g^b mod p.",
+      "audio_path": "static/audio/6974bb16-d4db-434d-b715-f528f0ce9367.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Isn\u2019t it risky to share these public values?",
+      "audio_path": "static/audio/a9368629-d731-4d1f-8a66-f0e4150718f2.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not at all! The security relies on the difficulty of reversing the operation. Now, they exchange the values.",
+      "audio_path": "static/audio/92a3370a-c490-4ce2-a059-19080f94d798.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So, how do they get to a shared secret key?",
+      "audio_path": "static/audio/fb2d079e-538d-424f-998d-9d59fa767efc.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Each party takes the other\u2019s public value and raises it to their private number. So, the first calculates (g^b mod p)^a mod p, and the second calculates (g^a mod p)^b mod p.",
+      "audio_path": "static/audio/a685b9ba-5744-463b-9f41-0981b8c05613.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "And both end up with the same number?",
+      "audio_path": "static/audio/c76641c9-391b-43e5-992a-0001811dc2fa.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! They both calculate g^(ab) mod p, which becomes their shared secret key.",
+      "audio_path": "static/audio/d45bce50-184c-4c6f-9e32-219dac5075af.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But why is this secure?",
+      "audio_path": "static/audio/24328a6a-10d6-47ef-bc5d-3a8f9ff570f1.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "The problem an attacker faces is called the Discrete Logarithm Problem, which is incredibly hard to solve with large numbers. That's what keeps it secure.",
+      "audio_path": "static/audio/8c214c78-8979-4351-9fe4-ad19011b02b4.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Ah, okay! So the secret key remains safe even over an insecure channel?",
+      "audio_path": "static/audio/e7f46afa-b8f8-49ae-bad5-ba79d69e290f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yep, that's the beauty of it. Now both parties can securely communicate using that key.",
+      "audio_path": "static/audio/9b268c26-1dc8-4edb-b7e4-67cd7cb044c4.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Got it! Thanks for the explanation!",
+      "audio_path": "static/audio/163e5cfc-a534-4d03-be6e-933593e07c84.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, I'm so confused. If Alice and Bob know the secret key, can't an attacker just find it too?",
+      "audio_path": "static/audio/e0b2345c-3989-466e-bc12-72a43f062e75.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not really! The key exchange uses large numbers, making it hard for attackers to calculate those secret keys from the available info.",
+      "audio_path": "static/audio/bfca52ae-747f-42d4-bebe-c575861302cc.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Why can't they just take p, g, A, and B and figure it out?",
+      "audio_path": "static/audio/d6939d0c-644e-421c-bf08-ad145eef5464.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Because calculating the private keys a and b requires solving complex mathematical problems, which is really difficult if p and g are big.",
+      "audio_path": "static/audio/f86460c8-edf4-4565-9a37-691a554b388d.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So just making p and g big makes everything secure?",
+      "audio_path": "static/audio/884ce755-ae07-4bf4-8771-586800e933e1.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Well, it\u2019s one part of it. Making a and b large as well ensures that figuring them out from p, g, A, and B takes a really long time, even for powerful computers.",
+      "audio_path": "static/audio/ec89ba84-8487-40d2-ab22-f1c184d3b73c.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "How do Alice and Bob get A and B then?",
+      "audio_path": "static/audio/0354d877-596e-4a54-ba15-397b4be7770e.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They start by choosing their own secret numbers, a and b. Then, they calculate A = g^a mod p and B = g^b mod p.",
+      "audio_path": "static/audio/c0877b27-e9e3-4e07-a1f5-33c64896932a.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, but then how do they end up with the same secret key?",
+      "audio_path": "static/audio/6a8e7dfc-af78-4db5-8d5e-1b5fb2f16b1b.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They exchange A and B. Alice calculates the secret key s as B^a mod p, and Bob calculates it as A^b mod p. Both these calculations result in the same number, which is their shared secret key.",
+      "audio_path": "static/audio/e8a34f5a-8861-4df6-80b6-66cfad14f7c9.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Why doesn't everyone use this method if it's so secure?",
+      "audio_path": "static/audio/9337a0d7-e1bb-4fd1-9533-4048963ecae4.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "It's great for exchanging keys securely over a public channel, but it's just one part of a larger cryptographic system. Other methods are used for secure messaging or data encryption.",
+      "audio_path": "static/audio/6edb03f3-d585-4a59-82dd-30579cdb7f28.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so it's like one piece of a puzzle.",
+      "audio_path": "static/audio/5b005975-742c-43c1-8f74-c0df26f45aab.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! It ensures that Alice and Bob have a shared secret even if they're in separate places, without anyone else easily figuring it out.",
+      "audio_path": "static/audio/bf02169a-dbf7-4cdd-bb55-498521ff97ee.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Got it! So as long as the numbers are big, the key is safe?",
+      "audio_path": "static/audio/b20f35bf-4c0f-469b-a190-36c61104dd30.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Right! Big numbers make all the difference in keeping it secure against attackers.",
+      "audio_path": "static/audio/05855c47-816e-4396-9dd4-99fa9347c5ed.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wait, what is this DES thing that we need to study?",
+      "audio_path": "static/audio/142e49d4-3d03-4f00-bbea-c45889072d5f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "DES stands for Data Encryption Standard. It's an algorithm used to encrypt data by converting plaintext into ciphertext.",
+      "audio_path": "static/audio/30d2ab84-9e1a-44a2-a0ca-77eead2c4bc8.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Okay, I see something about block ciphers. What's a block cipher?",
+      "audio_path": "static/audio/70a61503-3410-4fb1-9187-2b9d68bb1cd7.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "A block cipher is a method of encrypting text where a block of data, in this case, 64 bits, is encrypted at a time rather than one bit at a time.",
+      "audio_path": "static/audio/8b1939b0-5018-42ea-94e9-5750eea76ef3.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Why do they mention the key being 56 bits? Doesn't the data block size matter more?",
+      "audio_path": "static/audio/f39633a0-1e04-4385-b6b8-92a0b786ccc6.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Both are important. The data block size is how much data you encrypt at a time, while the 56-bit key is what you use to encrypt and decrypt it. It influences how secure the encryption is.",
+      "audio_path": "static/audio/e367f371-4d04-497c-a963-3d14e7627960.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So, what's this business about initial permutation and final permutation?",
+      "audio_path": "static/audio/4819e7bc-1bd8-46c0-80fb-758b64ece457.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "The initial permutation is just a rearrangement of the input bits before the main encryption rounds, and the final permutation is rearranging them one last time after those rounds to produce the ciphertext.",
+      "audio_path": "static/audio/7685a866-328f-4bac-a56e-db43f813b318.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Why do they have 16 rounds of something in the middle?",
+      "audio_path": "static/audio/54c42e58-e693-4fab-9b15-f04571b866b7.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Those 16 rounds are part of the Feistel network used by DES to increase security. Each round applies a specific operation using a part of the key to transform the data further.",
+      "audio_path": "static/audio/8c03615f-c09a-405d-ae87-8d57abeb83aa.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so do they use the same key for all the rounds?",
+      "audio_path": "static/audio/cfe41015-1b74-4b47-aee4-ac4706a9a0a1.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not exactly. They use different subkeys derived from the original 56-bit key for each round. This helps make the encryption harder to break.",
+      "audio_path": "static/audio/b23da3ce-90c4-46e2-ac4f-2459c176f731.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "If the key is 56 bits, isn\u2019t that not very secure nowadays?",
+      "audio_path": "static/audio/f7ea3692-f5a5-4b0d-9e14-5a9a9a17efb8.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, 56 bits is considered weak by today's standards since modern computers can crack it relatively quickly. That's why more advanced encryption systems like AES are used now.",
+      "audio_path": "static/audio/868b7610-47f9-44f7-b136-246a688adfb8.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What would you recommend then for secure encryption?",
+      "audio_path": "static/audio/b637ac61-4fd8-49ae-acae-5ad35907eaaf.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "For modern security, AES with at least a 128-bit key is recommended, as it provides much stronger protection than DES.",
+      "audio_path": "static/audio/9bdd2dd8-5f55-4ce3-8b4b-03f35ae47675.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Hey, Smart Mugger, I'm lost again. What's this \"Public Key Infrastructure\" all about?",
+      "audio_path": "static/audio/076d8e1d-c878-44a1-b350-4deddd76a1ef.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Public Key Infrastructure, or PKI, is a system that helps us verify if a specific public key belongs to the person it's supposed to, like Bob.",
+      "audio_path": "static/audio/8b512e2b-f2ac-446d-a353-f8f520f5cebb.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "But how does it do that? How do we know we can trust Bob's key?",
+      "audio_path": "static/audio/433bb3dc-e7e1-4127-b865-167f459eed16.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "That's where trust certification or root authorities come in, like VeriSign. These entities are trusted to verify and sign public keys, creating certificates.",
+      "audio_path": "static/audio/9dba2cd7-f7bf-442c-b87c-37c419692156.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Root authority? How am I supposed to know their key?",
+      "audio_path": "static/audio/3608b429-61dd-46d8-a08b-5bf0aa8b9e46.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Good question! Everyone must know the public key of the root authority. This key is often pre-installed in software like your web browser.",
+      "audio_path": "static/audio/e16133f4-3367-44d0-8be0-019b781adc6c.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Oh, so I can just check my browser for these keys?",
+      "audio_path": "static/audio/6b01beaf-0e4b-4df3-be65-53a9d6e3906f.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Exactly! In your browser settings, you can find many trusted root authorities' public keys.",
+      "audio_path": "static/audio/49984b4b-5104-4320-aae2-0e97ed711865.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "What do these root authorities do with their keys again?",
+      "audio_path": "static/audio/05519b7a-2f91-473f-9c2b-5df1502b7f88.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "They use their keys to sign certificates, which confirm the identity of others, whether individuals or entities.",
+      "audio_path": "static/audio/e5a111aa-a75a-494a-99b1-263cbf0c4ff9.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Certificates? Are these like digital IDs or something?",
+      "audio_path": "static/audio/bed95e1b-60cd-431f-b2a7-0734eaf5e971.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Yes, exactly! Certificates act like digital IDs, verifying someone's public key genuinely belongs to them.",
+      "audio_path": "static/audio/7850b8e1-4f02-4366-8fbd-599138a52ebc.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "So, any certificate I see has been signed by a trusted root?",
+      "audio_path": "static/audio/144c06c6-d1d1-41b8-9b80-b4151e7a2442.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Not always directly. Some certificates might be signed by other authorities that the root trusts. It's a chain of trust.",
+      "audio_path": "static/audio/6a233a5d-9965-4d64-8f38-245d6a6952cd.mp3"
+    },
+    {
+      "speaker": "Blur Sotong",
+      "text": "Wow, this is like a digital trust network.",
+      "audio_path": "static/audio/a03c905f-098a-4a7a-8c18-b7ecdc816c03.mp3"
+    },
+    {
+      "speaker": "Smart Mugger",
+      "text": "Precisely! It's all about creating a reliable network of trust so we can securely communicate online.",
+      "audio_path": "static/audio/70cafbce-8cd4-46b3-90b9-61ac60ed5d89.mp3"
     }
   ]
 }
